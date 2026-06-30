@@ -8,9 +8,14 @@ Each module is self-contained, parameterized, and documented — copy the source
 | Module | Description |
 |--------|-------------|
 | [`vpc`](./modules/vpc) | VPC with public and private subnets across AZs, an internet gateway, and NAT gateways. |
-| [`ecs-fargate-service`](./modules/ecs-fargate-service) | A container running on ECS Fargate behind an Application Load Balancer, with CPU autoscaling. |
-| [`s3-bucket`](./modules/s3-bucket) | General-purpose S3 bucket with public access blocked, encryption, versioning, and TLS-only access. |
+| [`ec2`](./modules/ec2) | EC2 instance with an encrypted root volume, IMDSv2, and an optional SSM role for keyless access. |
+| [`ecs-fargate-service`](./modules/ecs-fargate-service) | A container on ECS Fargate behind an Application Load Balancer, with CPU autoscaling. |
 | [`eks`](./modules/eks) | EKS cluster with managed node groups, IRSA, managed addons, and access-entry auth. |
+| [`rds`](./modules/rds) | Managed RDS instance (Postgres/MySQL/MariaDB) with encryption and a Secrets Manager-managed password. |
+| [`aurora`](./modules/aurora) | Aurora cluster (Postgres/MySQL), provisioned or Serverless v2, with writer and reader endpoints. |
+| [`dynamodb`](./modules/dynamodb) | DynamoDB table with PITR, encryption, secondary indexes, TTL, and streams. |
+| [`s3-bucket`](./modules/s3-bucket) | General-purpose S3 bucket with public access blocked, encryption, versioning, and TLS-only access. |
+| [`cloudfront`](./modules/cloudfront) | CloudFront distribution for a private S3 origin (OAC) or a custom origin, HTTPS enforced. |
 
 ## Usage
 
