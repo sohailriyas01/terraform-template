@@ -10,6 +10,7 @@ Each module is self-contained, parameterized, and documented — copy the source
 | [`vpc`](./modules/vpc) | VPC with public and private subnets across AZs, an internet gateway, and NAT gateways. |
 | [`ecs-fargate-service`](./modules/ecs-fargate-service) | A container running on ECS Fargate behind an Application Load Balancer, with CPU autoscaling. |
 | [`s3-bucket`](./modules/s3-bucket) | General-purpose S3 bucket with public access blocked, encryption, versioning, and TLS-only access. |
+| [`eks`](./modules/eks) | EKS cluster with managed node groups, IRSA, managed addons, and access-entry auth. |
 
 ## Usage
 
